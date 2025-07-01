@@ -1,6 +1,6 @@
 invulnerable = false;
 dead = false;
-atacking = false;
 move_speed = 1;
-direction = noone;
-speed = noone;
+attacking = false
+speed = 0;
+alarm[3] = self.attack_cooldown;

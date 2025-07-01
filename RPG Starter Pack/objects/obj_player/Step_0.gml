@@ -29,14 +29,16 @@ if (move_x != 0 || move_y != 0) {
     move_y /= length;
 }
 
-// Перемещаем персонажа и столкновения со стенами
-if (!place_meeting(x+move_x * move_speed, y, obj_wall) && !place_meeting(x, y +  move_y * move_speed, obj_box))
-{
-	x += move_x * move_speed;
+
+
+if (!place_meeting(x + move_x * move_speed, y, obj_wall) && 
+    !place_meeting(x + move_x * move_speed, y, obj_box)) {
+    x += move_x * move_speed;
 }
-if (!place_meeting(x, y +  move_y * move_speed, obj_wall) && !place_meeting(x, y +  move_y * move_speed, obj_box) )
-{
-	y += move_y * move_speed;
+
+if (!place_meeting(x, y + move_y * move_speed, obj_wall) && 
+    !place_meeting(x, y + move_y * move_speed, obj_box)) {
+    y += move_y * move_speed;
 }
 
 

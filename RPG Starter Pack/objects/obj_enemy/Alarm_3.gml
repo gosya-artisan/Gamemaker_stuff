@@ -1,0 +1,1 @@
+self.attack_ready = true;

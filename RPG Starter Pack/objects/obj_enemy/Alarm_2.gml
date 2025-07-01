@@ -1,4 +1,4 @@
-direction = point_direction(self.x, self.y, obj_player.x, obj_player.y);
-speed = 3;
-
-alarm[1] = 30;
+direction = point_direction(x, y, obj_player.x, obj_player.y);
+speed = dash_speed;
+self.attacking = true;
+alarm[1] = dash_duration; 
