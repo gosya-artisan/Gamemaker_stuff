@@ -94,7 +94,7 @@ if (enemy != noone) {
         instance_destroy(obj_shadow);
 		instance_destroy(obj_slash);
 		instance_destroy(obj_player);
-		game_controller.game_over = true;
+		obj_server.game_over = true;
     }
 }
 

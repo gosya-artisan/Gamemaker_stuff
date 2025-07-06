@@ -1,0 +1,1 @@
+cur_index = clamp(cur_index,0,array_length(menu)-1);

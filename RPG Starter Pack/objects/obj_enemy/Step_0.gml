@@ -1,4 +1,4 @@
-if (!game_controller.game_over ){
+if (!obj_server.game_over && instance_exists(obj_player)){
 	
 	if (attacking) {
 	        speed = speed;
